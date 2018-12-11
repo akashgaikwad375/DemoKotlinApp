@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "demokotlindriveapp",
+  "private_key_id": "062a67f62b70cb00ec920c38dbccb7a8cea18f06",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDDPBgCI8pnQCXJ\n0qK8uzkyYEcTLL34qeHw85kfa4kIaGy2VbGubgtdAnKvIooQzBrtQuPpd+elmKOa\nnyfm8i0769/wThKfm3Kec/dx9FWxF+/BzuAxpAmGWpkcQit54/7kqgqnuSjFLdpC\nOqxQdM0JtRqI4h96eL0N2Z6PG/Xr5O+zsgtX8g4oys5yvB7BooUHo7XpkIqiDhYA\n7AskX+eTBzIMuUvnRI4ZL3QJJ6MEHD/kXpik8RBys6e1avviRoEpB19kwErhBXaj\n5XRobjlXqn1SR1XuuuIhD4YtUXFsbYNbil108/5JKtjf7DKDRvW2rfgc1yFSZQbK\nhomfEA1xAgMBAAECggEAWL+3DDX32tK6utGA/7k+CWvhs1I581FKb61UlIdeLg/G\nJ2ayFCBbEwc7WeiiCXu229b14toKV+kYqf+idGXvcRdK36Kl7Z8MzgHaYJdY4t2G\nNDxWBsrSN5x0kHd16v1dD9ZKbK8LXQL4ffXNAe/uivSkIMhl1dcP3b1oyhZERtwq\nZVjXr4d5tEuak33ablWZ3RI5cJveVMqFd+00NwR4JBSzadwv3N2QULySo4VowkNd\nugDUSHeWnn5VfEJTRjMuTj7UQsKUHwIy5eFM//fBdVuPZKTgSrfTeMxF1uUKurvs\nBWERffjJr0JqTbLafl0qi28VvUmWKuITOfp8DEsjBwKBgQDhknzBsLrGadUjeDXp\n9DKe+UfqibhyY94/uwjdAtVQWJkImAJb/gHAGj1Ye6bjNWznaRHTb9ucfzZ8//mJ\n05+YpUNIVvpCDM7ab3GhDlGMUzVj4fE3f/ENF2KHRNYSDQgczVRHEifNjNc3Yxjl\nvzLFLRBGlJK2Huixqnxym6JfewKBgQDdkfxUD3uRN/FipmlnK0gV2EpSAwYJuTyD\nih1jaiaupe9iZJoMuAyV0gxIfCqArVAPxuR7iVtkHQlo86ZfycZVQHoWLBh1yKpy\nAycCTnL0flQJElN5B043FEXwI7gbcTH/wi1Qpppe7EQ399wB3Nns2EwUVzPRPnCS\nbXPSqogdAwKBgBbC5k3RHHeq9DPZDG+oEXeTJduXvAHm6+U4ZUOP5qBt4DtKw2ou\n7lRJEYmdKJDisjODmaXhMqLO/1uLpM1wijkn6+sfw67ohfLqreeXf0kOmGOUx/dW\ntKcihfGqU4OMxxXI7kkhntyR6qGPIVMFgQT+cBb/JPK1mbtbvaT+6VqDAoGAOzSP\nIEci1aMFNT8SWycNlAi/kzqLmn2M1flJ8Q6kV3aviLMpFsz3T/FYpuXG1at6AT08\nQGZrrUy0/v5cLqxT+uPHu7T8tDxyjxSYj902im5XNjVXaLezBrS8G3bv8yVEHvtb\n8HkUNtkbQXlRqI3DDa6eZbEHf5oXqojksh4vUNECgYAkyxNK+rd4i64uOtQO4hCx\nraADZ1dlvGc7vWOtYkR6MzVr6ORYVypJSejttXI6Jdfx0+onE1s6N8/LOjwh4XF6\nc/LaHFNpFaEdYYyCROhbuIgm7Kw/cWUiLDbiGFxWVE4taQwmBPzBFMS9nXQreFDj\nbHtMH/CvvAvV56mcGIILhQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "demokotlindriveapp@demokotlindriveapp.iam.gserviceaccount.com",
+  "client_id": "110331148718183212335",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/demokotlindriveapp%40demokotlindriveapp.iam.gserviceaccount.com"
+}
