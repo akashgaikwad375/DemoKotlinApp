@@ -5,6 +5,7 @@ import android.widget.Toast
 import com.webwerks.demokotlinapp.R
 import com.webwerks.demokotlinapp.databinding.LoginActivityBinding
 import com.webwerks.demokotlinapp.views.base.BaseActivity
+import com.webwerks.demokotlinapp.views.home.HomeActivity
 
 
 class LoginActivity : BaseActivity<LoginActivityBinding>(), LoginContract.View {
@@ -18,7 +19,8 @@ class LoginActivity : BaseActivity<LoginActivityBinding>(), LoginContract.View {
     override fun initView(binding: LoginActivityBinding) {
         mBinding = binding
         binding.view = this
-        presenter = LoginPresenter(this)
+        presenter = LoginPresenter()
+        presenter?.setView(this)
     }
 
     fun doLogin() {
@@ -28,6 +30,8 @@ class LoginActivity : BaseActivity<LoginActivityBinding>(), LoginContract.View {
 
     override fun onLoginSuccess(successMessage: String) {
         Toast.makeText(this, successMessage, Toast.LENGTH_SHORT).show()
+        finish()
+        startActivity(Intent(this, HomeActivity::class.java))
     }
 
     override fun onLoginFailure(errorMessage: String) {
