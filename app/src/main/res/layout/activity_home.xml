@@ -1,9 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".views.home.HomeActivity">
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
 
-</android.support.constraint.ConstraintLayout>
+    <data class="HomeActivityBinding">
+
+        <variable
+            name="user"
+            type="com.webwerks.demokotlinapp.models.UserBindingModel" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size_20_dp"
+                android:gravity="center"
+                android:text="@{user.username}"
+                android:textColor="@color/sign_in_button_color"
+                android:textSize="@dimen/size_20_sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size_20_dp"
+                android:gravity="center"
+                android:text="@{user.email}"
+                android:textColor="@color/sign_in_button_color"
+                android:textSize="@dimen/size_20_sp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size_20_dp"
+                android:gravity="center"
+                android:text="@{user.modified}"
+                android:textColor="@color/sign_in_button_color"
+                android:textSize="@dimen/size_20_sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size_20_dp"
+                android:gravity="center"
+                android:text="@{user.firstName}"
+                android:textColor="@color/sign_in_button_color"
+                android:textSize="@dimen/size_20_sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size_20_dp"
+                android:gravity="center"
+                android:text="@{user.lastName}"
+                android:textColor="@color/sign_in_button_color"
+                android:textSize="@dimen/size_20_sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</layout>

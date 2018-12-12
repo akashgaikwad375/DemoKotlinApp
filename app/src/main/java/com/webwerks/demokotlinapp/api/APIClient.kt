@@ -1,7 +1,7 @@
 package com.webwerks.demokotlinapp.api
 
 import com.google.gson.Gson
-import com.webwerks.demokotlinapp.global.BASE_URL
+import com.webwerks.demokotlinapp.utils.BASE_URL
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
@@ -9,7 +9,7 @@ import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
 
 
-class APIClient {
+class APIClient private constructor(){
 
     companion object {
 

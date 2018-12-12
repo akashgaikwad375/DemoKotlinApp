@@ -3,14 +3,14 @@ package com.webwerks.demokotlinapp.models
 import com.google.gson.annotations.SerializedName
 import java.io.Serializable
 
-class BaseResponse: Serializable {
+open class BaseResponse : Serializable {
 
     @SerializedName("status")
-    var status : String = ""
+    var status: String = ""
 
     @SerializedName("message")
-    var message : String = ""
+    var message: String = ""
 
     @SerializedName("user_msg")
-    var userMsg : String = ""
+    var userMsg: String = ""
 }
