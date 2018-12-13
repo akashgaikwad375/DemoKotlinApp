@@ -18,7 +18,7 @@ abstract class BaseActivity<in T : ViewDataBinding> : AppCompatActivity(), BaseV
     protected abstract fun initView(binding: T)
     protected abstract fun setListener()
     abstract fun intentData(intent: Intent)
-    abstract fun getPresenter(): BasePresenter
+    abstract fun getPresenter(): BasePresenter?
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

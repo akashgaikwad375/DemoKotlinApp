@@ -11,6 +11,7 @@ import com.webwerks.demokotlinapp.utils.Utils
 import com.webwerks.demokotlinapp.views.PreferenceManager
 import com.webwerks.demokotlinapp.views.base.BaseActivity
 import com.webwerks.demokotlinapp.views.base.BasePresenter
+import kotlinx.android.synthetic.main.activity_login.*
 
 
 class LoginActivity : BaseActivity<LoginActivityBinding>(), LoginContract.View {
@@ -36,14 +37,9 @@ class LoginActivity : BaseActivity<LoginActivityBinding>(), LoginContract.View {
 
 
     fun doLogin() {
-        if (Utils.isConnectedToInternet(this)) {
-            if (!Utils.validateEditText(this, mBinding.edtEmail, "Email") &&
-                    !Utils.validateEmail(this, mBinding.edtEmail) &&
-                    !Utils.validateEditText(this, mBinding.edtPassword, "Password")) {
-                presenter?.doLogin(mBinding.edtEmail.text.toString().trim(),
-                        mBinding.edtPassword.text.toString().trim())
-            }
-        }
+        if (Utils.isConnectedToInternet(this))
+            presenter?.doLogin(mBinding.edtEmail.text.toString().trim(),
+                    mBinding.edtPassword.text.toString().trim())
     }
 
     override fun onLoginSuccess(user: User) {
@@ -53,6 +49,17 @@ class LoginActivity : BaseActivity<LoginActivityBinding>(), LoginContract.View {
     }
 
     override fun onLoginFailure(errorMessage: String) {
+    }
+
+
+    override fun showEmailErrorMessage(message: String){
+        mBinding.edtEmail.requestFocus()
+        mBinding.edtEmail.error = message
+    }
+
+    override fun showPasswordErrorMessage(message: String){
+        mBinding.edtPassword.requestFocus()
+        mBinding.edtPassword.error = message
     }
 
     override fun setListener() {

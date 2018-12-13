@@ -13,5 +13,7 @@ interface LoginContract {
     interface View: BaseView{
         fun onLoginSuccess(user: User)
         fun onLoginFailure(errorMessage: String)
+        fun showEmailErrorMessage(message: String)
+        fun showPasswordErrorMessage(message: String)
     }
 }
