@@ -31,4 +31,5 @@ class UserBindingModel : BaseObservable() {
     var modified: String by Delegates.observable("") { prop, old, new ->
         notifyPropertyChanged(BR.modified)
     }
+
 }
